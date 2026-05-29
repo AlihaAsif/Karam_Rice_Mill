@@ -1,0 +1,106 @@
+.testimonials{
+  padding:80px 20px;
+  background:#f6f6f6;
+  display:flex;
+  justify-content:center;
+}
+
+.test-container{
+  max-width:1200px;
+  width:100%;
+  text-align:center;
+}
+
+.test-small{
+  color:#e0a500;
+  font-family: 'Covered By Your Grace', cursive;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.test-container h2{
+  font-size:42px;
+  margin:10px 0 50px;
+}
+
+
+
+.test-cards{
+  display:flex;
+  gap:30px;
+  align-items:stretch; 
+}
+
+.test-card{
+  flex:1;
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  text-align:left;
+  box-shadow:0 5px 20px rgba(0,0,0,0.05);
+
+  display:flex;
+  flex-direction:column;
+
+  transition:all 0.35s ease;
+}
+
+
+.test-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+
+
+.stars{
+  color:#e0a500;
+  margin-bottom:15px;
+}
+
+.test-card p{
+  color:#777;
+  line-height:1.7;
+  margin-bottom:25px;
+
+  flex-grow:1; 
+}
+
+
+
+.test-user{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  position:relative;
+}
+
+.test-user img{
+  width:50px;
+  height:50px;
+  border-radius:8px;
+}
+
+.test-user h4{
+  margin:0;
+  font-size:16px;
+}
+
+.test-user span{
+  color:#888;
+  font-size:14px;
+}
+
+
+.quote{
+  position:absolute;
+  right:0;
+  background:#4caf50;
+  color:white;
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

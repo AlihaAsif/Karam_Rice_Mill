@@ -1,0 +1,165 @@
+
+.cta{
+background:#49a942;
+padding:70px 20px;
+color:white;
+}
+
+.cta-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+
+.cta-label{
+color:#ffc83d;
+font-family: 'Covered By Your Grace', cursive;
+font-weight: 500;
+font-size: 24px;
+}
+
+.cta-text h2{
+font-size:36px;
+margin:10px 0;
+max-width:700px;
+}
+
+.cta-text p{
+opacity:.8;
+}
+
+.cta-btn {
+  background: #f3c24c;
+  border: none;
+  padding: 16px 35px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease;
+  text-decoration: none;   
+  color: #111;            
+  display: inline-block;  
+}
+
+
+.cta-btn:hover{
+box-shadow:0 0 15px rgba(255,255,255,0.6),
+           0 0 25px rgba(255,200,61,0.8);
+transform:translateY(-2px);
+}
+
+
+
+.footer{
+background:#1c1c1c;
+color:white;
+padding:80px 20px;
+}
+
+.footer-container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:2fr 1fr 2fr 1.5fr;
+gap:50px;
+}
+
+
+.footer-logo{
+width:120px;
+margin-bottom:20px;
+}
+
+.footer-col p{
+color:#aaa;
+line-height:1.7;
+}
+
+
+.socials{
+margin-top:20px;
+display:flex;
+gap:15px;
+font-size:18px;
+}
+
+
+.footer-col h4{
+margin-bottom:20px;
+}
+
+.footer-col ul{
+list-style:none;
+padding:0;
+}
+
+.footer-col li{
+margin-bottom:10px;
+color:#aaa;
+cursor:pointer;
+}
+
+.news-item{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+}
+
+.news-item img{
+width:60px;
+height:50px;
+border-radius:5px;
+object-fit:cover;
+}
+
+.news-item span{
+font-size:12px;
+color:#ffc83d;
+}
+
+
+.contact p{
+display:flex;
+gap:10px;
+margin-bottom:10px;
+color:#aaa;
+}
+
+.footer-bottom{
+border-top:1px solid #333;
+margin-top:60px;
+padding-top:20px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+max-width:1200px;
+margin-left:auto;
+margin-right:auto;
+
+color:#aaa;
+font-size:14px;
+}
+
+.developer{
+color:#f3c24c;
+font-weight:500;
+}
+
+.footer-links{
+display:flex;
+gap:20px;
+}
+
+.footer-links a{
+color:#aaa;
+text-decoration:none;
+}
+
+.footer-links a:hover{
+color:white;
+}

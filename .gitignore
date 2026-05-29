@@ -1,0 +1,74 @@
+# Dependencies
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env*
+*.env
+config.env
+secrets.json
+
+# Database & Admin Configs
+*.db
+*.sqlite
+dump.rdb
+admin-config.json
+credentials.json
+key.json
+config/admin.json
+config/keys.js
+config/db.js
+db_config.json
+
+# API Keys & Credentials
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+jwt-secret.txt
+
+# Build & Output directories
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.serverless/
+.docusaurus/
+.cache/
+
+# System & Temp Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE & Editor Settings
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
+*.workspace

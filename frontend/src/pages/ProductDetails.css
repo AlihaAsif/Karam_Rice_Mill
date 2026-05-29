@@ -1,0 +1,267 @@
+.product-details-page {
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #333;
+}
+
+/* Top Section: Image and Info */
+.product-main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .product-main-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.product-image-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 500px;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-info-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info-side h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.short-desc {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.delivery-info {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 25px;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #388e3c;
+}
+
+.whatsapp-btn i {
+  margin-right: 8px;
+}
+
+.category-info {
+  font-size: 14px;
+}
+
+.category-info strong {
+  color: #000;
+}
+
+/* Tabs Section */
+.product-tabs-section {
+  margin-top: 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.tabs-header {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #666;
+}
+
+.tab-btn.active {
+  background-color: #f9f9f9;
+  color: #000;
+  border-top: 2px solid #ddd;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+}
+
+.tab-content {
+  padding: 40px 0;
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* Related Products Section */
+.related-products-section {
+  margin-top: 60px;
+}
+
+.related-products-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.related-products-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.related-card {
+  width: 250px;
+  text-align: left;
+  text-decoration: none;
+  color: #333;
+}
+
+.related-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.related-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Reviews Tab Styles */
+.no-reviews-text {
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.review-form-container h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.save-info-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #555;
+}
+
+.rating-input {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.stars {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.stars i:hover {
+  color: #ffb800;
+}
+
+.review-form textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  margin-bottom: 20px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+}
+
+.submit-review-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-review-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Active Thumbnail */
+.active-thumb {
+  border: 2px solid #4caf50;
+}
+

@@ -1,0 +1,146 @@
+
+
+.vision-section {
+  padding: 100px 10%;
+  background: #f6f6f6;
+}
+
+.vision-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.vision-image {
+  flex: 1;
+}
+
+.vision-image img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  object-fit: cover;
+  height: 720px
+}
+
+.vision-content {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vision-small {
+  color: #e0a500;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.vision-title {
+  font-size: 52px;
+  font-weight: 800;
+  margin: 0 0 18px;
+  line-height: 1.15;
+  color: #1a1a1a;
+}
+
+.vision-text {
+  color: #666;
+  line-height: 1.85;
+  font-size: 15.5px;
+  margin-bottom: 32px;
+}
+
+/* Cards */
+
+.vision-cards {
+  display: flex;
+  gap: 18px;
+}
+
+.vision-card {
+  flex: 1;
+  padding: 28px 20px;
+  text-align: center;
+  border-radius: 14px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.vision-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.vision-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.green  { background: #4CAF50; }
+.yellow { background: #b8c52f; }
+.orange { background: #e0b13a; }
+
+/* Video Section */
+
+.video-section {
+  height: 500px;
+  background-image: url("/hero1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 80px 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.75));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.play-button {
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 25px;
+  transition: all 0.35s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.video-title {
+  color: white;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+  max-width: 700px;
+}

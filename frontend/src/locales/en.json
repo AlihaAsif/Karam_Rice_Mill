@@ -1,0 +1,284 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "managing_director": "Managing Director",
+    "ceo": "Chief Executive Officer",
+    "director_sales": "Director Sales & Purchase",
+    "online_store": "Online Store",
+    "our_process": "Our Process",
+    "e_catalog": "E-Catalog",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "footer": {
+    "description": "Premium Quality Rice from Pakistan to the World. We take pride in processing the finest rice grains with state-of-the-art technology.",
+    "quick_links": "Quick Links",
+    "products": "Products",
+    "contact_us": "Contact Us",
+    "basmati": "Basmati Rice",
+    "sella": "Sella Rice",
+    "steam": "Steam Rice",
+    "all_rights": "All rights reserved"
+  },
+  "home": {
+    "hero_subtitle": "PREMIUM QUALITY FROM PAKISTAN",
+    "hero_title": "Pure & Aromatic Rice <br /> for the World",
+    "hero_desc": "Experience the finest grains sourced from the rich lands of Punjab, carefully processed with modern technology to deliver perfection in every bite.",
+    "explore_products": "Discover More",
+    "contact_us": "Contact Us",
+    "about_title": "About Karam Rice Mills",
+    "about_desc": "We are a leading processor and exporter of premium Pakistani rice. With decades of experience, we ensure that only the finest grains reach your table.",
+    "read_more": "Read More"
+  },
+  "store": {
+    "search_placeholder": "Search products...",
+    "categories": "Categories",
+    "all": "All",
+    "showing_results": "Showing results",
+    "default_sorting": "Default sorting",
+    "sort_az": "Sort by name: A-Z",
+    "sort_za": "Sort by name: Z-A",
+    "read_more": "Read more",
+    "no_products": "No products found."
+  },
+  "cart": {
+    "your_cart": "Your Cart",
+    "empty": "Your cart is empty.",
+    "browse_products": "Browse Products",
+    "category": "Category",
+    "remove": "Remove",
+    "order_summary": "Order Summary",
+    "total_items": "Total Items",
+    "price_note": "* Prices are available upon request. Please contact us on WhatsApp to proceed with your order.",
+    "whatsapp_for_price": "WhatsApp for Price"
+  },
+  "product": {
+    "free_delivery": "Free home delivery in Okara",
+    "category": "Category",
+    "add_to_cart": "Add to Cart",
+    "added": "Added to cart!",
+    "back_to_store": "Back to Store"
+  },
+  "products_section": {
+    "quality_assured": "Quality Assured",
+    "karam_sella": "Karam 1121 Sella Rice",
+    "premium_long_grain": "Premium Quality Extra Long Grain Rice",
+    "global_reach": "Global Reach",
+    "karam_steam": "Karam 1121 Steam Rice",
+    "high_quality_export": "High Quality Export Standard Rice",
+    "customer_trust": "Customer Trust",
+    "karam_golden_sella": "Karam Golden Sella",
+    "trusted_worldwide": "Trusted by Customers Worldwide"
+  },
+  "who_we_are": {
+    "small_title": "— Get to Know Us",
+    "title": "Who We Are",
+    "desc": "KARAM RICE MILL is a leading rice processing and export company committed to providing high-quality rice products to global markets. With modern milling facilities and a dedicated professional team, we specialize in producing rice that meets international standards of quality, hygiene, and safety.",
+    "advanced_milling": "Advanced milling, sorting, and packaging systems",
+    "call_anytime": "Call Anytime",
+    "years_experience": "Years Experience"
+  },
+  "stats": {
+    "franchises": "Total Franchises",
+    "production": "Production Tons",
+    "farmers": "Farmers",
+    "team": "Our Team"
+  },
+  "experience": {
+    "small_title": "Our Recent Products",
+    "title": "Our Experience & Expertise",
+    "desc": "With years of industry experience, KARAM RICE MILL understands the importance of quality, timing, and reliability in the global food supply chain. Our skilled workforce, advanced machinery, and systematic processes enable us to deliver rice products that meet diverse international standards.",
+    "packaging": "Efficient <br/> Packaging <br/> & Logistics",
+    "packaging_desc": "Secure packaging and efficient logistics ensure rice reaches global markets safely.",
+    "polishing": "Advanced <br/> Polishing <br/> Unit",
+    "polishing_desc": "Modern polishing units enhance the shine and quality of rice grains.",
+    "milling": "Advanced <br/> Rice Milling",
+    "milling_desc": "High-tech milling machines ensure premium quality rice production."
+  },
+  "why_trusted": {
+    "small_title": "Offering The Best",
+    "title": "Why We Are Trusted",
+    "desc": "KARAM RICE MILL is trusted by clients worldwide due to our consistent quality, timely deliveries, and professional approach.",
+    "quality": "Quality Excellence",
+    "satisfaction": "Customer Satisfaction",
+    "integrity": "Integrity",
+    "sustainability": "Sustainability",
+    "certified": "We're Certified Exporter"
+  },
+  "vision": {
+    "small_title": "What We Do",
+    "title": "Our Global Vision",
+    "desc_1": "We aim to expand our global footprint by supplying premium-quality rice products to emerging and established international markets. Our focus is on meeting diverse consumer preferences while maintaining consistent quality standards across all regions we serve. Quality is at the core of everything we do, from sourcing the finest paddy to using advanced milling, polishing, and packaging technologies.",
+    "desc_2": "Each batch of rice undergoes strict quality control to ensure purity, freshness, and nutritional value that meets international benchmarks. Sustainability is also an integral part of our operations. We adopt environmentally responsible farming practices, efficient resource utilization, and eco-friendly processing methods to support both global consumers and local farming communities.",
+    "fields": "Fields",
+    "customers": "Customer's",
+    "farmers": "Farmers",
+    "video_title": "Pakistan No # 1 <br /> Best Rice Exporter"
+  },
+  "testimonials": {
+    "small_title": "Our Testimonials",
+    "title": "What They Say",
+    "t1_desc": "The quality of rice we receive is consistently excellent. From grain uniformity to packaging, every shipment meets international standards. Their commitment to timely delivery and transparent communication makes them a trusted long-term partner.",
+    "t1_author": "International Rice Importer",
+    "t2_desc": "We have been sourcing rice from this mill for years, and the results have been outstanding. The advanced milling and polishing process ensures premium quality.",
+    "t2_author": "Wholesale Distributor",
+    "t3_desc": "What truly sets them apart is reliability and quality assurance. Every order is handled professionally with strict quality control and timely delivery.",
+    "t3_author": "Food Supply Chain Manager",
+    "customer": "Customer"
+  },
+  "news_section": {
+    "small_title": "From the blog",
+    "title": "News & Articles",
+    "n1_title": "The Journey of Rice – From Farm to Global Markets",
+    "n2_title": "Why Advanced Rice Milling Technology",
+    "n3_title": "Sustainable Practices in the Rice Milling",
+    "comments": "0 Comments"
+  },
+  "about_hero": {
+    "tagline": "Get to Know us",
+    "title": "About KARAM RICE MILL",
+    "highlight": "Karam Rice Mills has been serving with pride since 1996 and with the establishment of our modern mill in 2001.",
+    "desc": "We set new standards of excellence in rice processing. We specialize in premium steam rice and parboiled rice, delivering natural taste, aroma, and nutrition with every grain. Our philosophy is built on honesty, care, and a promise never to compromise on quality. Today, Karam Rice Mills proudly exports worldwide, bringing families and communities the trusted taste of Pakistan.",
+    "feat1": "Advanced rice milling and polishing units",
+    "feat2": "Quality testing laboratories",
+    "feat3": "Hygienic storage warehouses",
+    "contact_btn": "Contact Us"
+  },
+  "team": {
+    "tagline": "Team Members",
+    "title": "Meet Our Executive Leaders",
+    "ceo": "Chief Executive Officer",
+    "director_sales": "Director Sales & Purchase",
+    "managing_director": "Managing Director"
+  },
+  "ceo_msg": {
+    "title": "Chief Executive Officer",
+    "desc": "KARAM RICE MILL focuses on operational excellence, advanced infrastructure, and efficient processes to ensure consistent quality and timely delivery. By adapting to market demands and maintaining strict quality control, we strive to build long-term partnerships and contribute positively to the global rice industry.",
+    "name": "M. Ikram – Chief Executive Officer",
+    "call_anytime": "Call Anytime",
+    "years_exp": "Years Experience"
+  },
+  "md_msg": {
+    "title": "Managing Director",
+    "desc": "KARAM RICE MILL focuses on operational excellence, advanced infrastructure, and efficient processes to ensure consistent quality and timely delivery. By adapting to market demands and maintaining strict quality control, we strive to build long-term partnerships and contribute positively to the global rice industry.",
+    "name": "M. Kashif – Managing Director",
+    "call_anytime": "Call Anytime",
+    "years_exp": "Years Experience"
+  },
+  "ds_msg": {
+    "title": "Director Sales & Purchase",
+    "tagline": "karamricemills.com",
+    "desc": "At KARAM RICE MILL, our journey has always been guided by a strong commitment to quality, integrity, and customer satisfaction. From the very beginning, our goal has been to deliver premium quality rice that meets international standards and earns the trust of global markets. We believe that success is built on consistency, innovation, and strong relationships. By combining traditional rice milling expertise with modern technology, we ensure that every product reflects our dedication to excellence. Our focus on sustainable practices and continuous improvement enables us to serve our customers responsibly and reliably. As we move forward, KARAM RICE MILL remains committed to expanding its global presence while maintaining the highest standards of quality and service. I thank our valued customers, partners, and team members for being an essential part of our success.",
+    "name": "M. Asif – Director Sales & Purchase",
+    "call_anytime": "Call Anytime",
+    "years_exp": "Years Experience"
+  },
+  "contact_page": {
+    "about_title": "About",
+    "about_text": "KARAM RICE MILL is a leading rice processing and export company committed to providing high-quality rice products to global markets.",
+    "contact_title": "Contact",
+    "hours": "Mon - Fri: 7:00 am - 6:00 pm",
+    "address_title": "Address",
+    "address": "6Km Hujra Depalpur Road Okara, Punjab, Pakistan",
+    "get_in_touch": "Get in Touch",
+    "get_back": "Let us know how to get back to you.",
+    "first_name": "First Name",
+    "first_name_ph": "Enter your first name here",
+    "last_name": "Last Name",
+    "last_name_ph": "Enter your last name here",
+    "email": "Email Address",
+    "email_ph": "Example: user@website.com",
+    "subject": "Subject",
+    "subject_ph": "How can we help you?",
+    "telephone": "Telephone",
+    "website": "Website",
+    "how_can_we_help": "How can we help?",
+    "feel_free": "Feel free to ask a question or simply leave a comment",
+    "comments_label": "Comments / Questions",
+    "comment_ph": "Add text",
+    "sending": "Sending...",
+    "send_message": "Send Message",
+    "success_msg": "Message sent successfully!",
+    "error_msg": "Failed to send message. Please try again."
+  },
+  "news_page": {
+    "leave_comment": "Leave a Comment",
+    "comment_success": "Comment submitted! It will appear after admin approval.",
+    "comment_error": "Failed to submit comment. Please try again.",
+    "save_info": "Save my name, email, and website in this browser for the next time I comment.",
+    "full_name": "Full Name",
+    "email_address": "Email Address",
+    "write_comment": "Write Comment",
+    "posting": "Posting...",
+    "post_comment": "Post Comment",
+    "search_here": "Search here...",
+    "recent_posts": "Recent Posts",
+    "recent_comments": "Recent Comments",
+    "no_comments": "No comments to show.",
+    "latest_posts": "Latest Posts",
+    "categories": "Categories",
+    "uncategorized": "Uncategorized",
+    "tags": "Tags",
+    "comments_count": "comments",
+    "by": "by"
+  },
+  "product_details": {
+    "loading": "Loading product details...",
+    "back_to_store": "Back to Store",
+    "short_desc": "At <strong>Karam Rice Mills</strong>, we specialize in producing and supplying <strong>high-quality rice</strong> processed under strict quality control standards. Our rice is carefully sourced from trusted farms, hygienically milled, and expertly packaged to preserve its <strong>natural aroma, texture, and nutritional value</strong>.",
+    "free_delivery": "Free home delivery in Okara",
+    "add_to_cart": "Add to Cart",
+    "added_to_cart": "Added to cart!",
+    "category": "Category",
+    "related_products": "Related products",
+    "tab_description": "Description",
+    "tab_reviews": "Reviews",
+    "no_reviews": "There are no approved reviews yet.",
+    "market_standards": "With a strong commitment to excellence, we deliver rice that meets both <strong>local and international market standards</strong>, making it ideal for households, wholesalers, exporters, and food businesses.",
+    "leave_review": "Leave a Review for",
+    "your_rating": "Your rating",
+    "your_review_ph": "Your Review...",
+    "your_name_ph": "Your Name",
+    "email_ph": "Email Address",
+    "submitting": "Submitting...",
+    "submit_review": "Submit Review",
+    "review_success": "Review submitted successfully! It will appear after admin approval.",
+    "review_error": "Failed to submit review. Please try again.",
+    "please_rate": "Please select a star rating."
+  },
+  "categories": {
+    "Basmati Rice": "Basmati Rice",
+    "Sella Rice": "Sella Rice",
+    "Steam Rice": "Steam Rice",
+    "All": "All"
+  },
+  "news_articles": {
+    "date": "23 December 2025",
+    "author_mudassar": "Mudassar",
+    "author_aliha": "Aliha",
+    "by": "by",
+    "comments": "comments",
+    "comment_single": "comment",
+    "related_posts": "Related Posts",
+    "news1": {
+      "title": "The Journey of Rice – From Farm to Global Markets",
+      "p1": "Rice travels a long and careful journey before reaching consumers worldwide. It begins at carefully selected farms where high-quality paddy is cultivated using sustainable agricultural practices. Once harvested, the paddy is transported to our advanced rice milling facility for processing.",
+      "p2": "At the mill, the rice undergoes cleaning, dehusking, whitening, polishing, and grading using modern machinery to ensure minimal breakage and maximum yield. Strict quality checks are performed at every stage to maintain purity and consistency.",
+      "p3": "Finally, the rice is packed using hygienic, food-grade packaging and distributed through an efficient logistics network. This streamlined process ensures that customers across global markets receive fresh, premium-quality rice every time."
+    },
+    "news2": {
+      "title": "Why Advanced Rice Milling Technology",
+      "p1": "Modern rice milling technology plays a vital role in producing high-quality rice. Advanced machinery allows precise control over each stage of the milling process, resulting in uniform grain size, improved texture, and enhanced appearance.",
+      "p2": "By using automated systems, rice mills can reduce wastage, improve efficiency, and maintain consistent quality across large volumes. Advanced polishing units enhance the shine of rice grains without affecting their nutritional value.",
+      "p3": "Investing in cutting-edge technology not only improves product quality but also supports sustainability by optimizing energy usage and reducing environmental impact—making advanced rice milling essential for today's global food industry."
+    },
+    "news3": {
+      "title": "Sustainable Practices in the Rice Milling",
+      "p1": "Sustainability has become a key focus in the rice milling industry. Responsible rice mills prioritize eco-friendly practices to reduce waste, conserve energy, and support farming communities.",
+      "p2": "From sourcing paddy from responsible farmers to using energy-efficient milling equipment, sustainability is integrated into every step of the process. Byproducts such as rice husk and bran are reused for animal feed or energy generation, minimizing waste.",
+      "p3": "Sustainable rice milling ensures long-term environmental balance while delivering safe, high-quality rice products to consumers worldwide. It also strengthens trust with global buyers who value ethical and responsible sourcing."
+    }
+  }
+}
+

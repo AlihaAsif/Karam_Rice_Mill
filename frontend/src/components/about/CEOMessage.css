@@ -1,0 +1,137 @@
+.ceo-wrapper {
+  background: #f6f6f6;
+  width: 100%;
+}
+
+.ceo-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+
+.ceo-image-side {
+  flex: 0 0 420px;
+  position: relative;
+}
+
+.ceo-img-frame {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ceo-img-frame img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 16px;
+}
+
+.ceo-exp-box {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: white;
+  padding: 22px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  text-align: left;
+}
+
+.ceo-exp-box h3 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #e0a500;
+  margin: 0;
+  line-height: 1;
+}
+
+.ceo-exp-box p {
+  font-size: 14px;
+  color: #555;
+  margin: 6px 0 0 0;
+}
+
+
+.ceo-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ceo-tagline {
+  font-family: 'Covered By Your Grace', cursive;
+  color: #e0a500;
+  font-size: 22px;
+  margin: 0;
+}
+
+.ceo-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #111;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.ceo-desc {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 0;
+}
+
+.ceo-name {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+.ceo-contact-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.ceo-phone-icon {
+  background: #a3c423;
+  color: white;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.ceo-contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ceo-contact-text span {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 18px;
+  color: #777;
+}
+
+.ceo-contact-text strong {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111;
+}

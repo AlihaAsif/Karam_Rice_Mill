@@ -1,0 +1,119 @@
+
+.about-hero-wrapper {
+ background: #f5f5f5;
+  width: 100%;
+}
+
+.about-hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-hero-left {
+  position: relative;
+  flex: 1;
+  min-height: 500px;
+}
+
+.mill-img {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.bag-img {
+  position: absolute;
+  bottom: -50px;
+  left: -105px;
+  width: 380px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+}
+
+
+.about-hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-tagline {
+  font-family: 'Covered By Your Grace', cursive;
+ color:#e0a500;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.about-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.about-highlight {
+  color: #4caf50;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-desc {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+.about-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #111;
+}
+
+.check-icon {
+  color: #4caf50;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.about-contact-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.3s;
+  text-decoration: none;   
+  display: inline-block;  
+}
+
+.about-contact-btn:hover {
+  background: #388e3c;
+}

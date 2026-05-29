@@ -1,0 +1,125 @@
+.news{
+  padding:80px 20px;
+  background:#f6f6f6;
+  display:flex;
+  justify-content:center;
+}
+
+.news-container{
+  max-width:1200px;
+  width:100%;
+  text-align:center;
+}
+
+.news-small{
+  color:#e0a500;
+  font-family: 'Covered By Your Grace', cursive;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.news-container h2{
+  font-size:42px;
+  margin:10px 0 50px;
+}
+
+
+
+.news-cards{
+  display:flex;
+  gap:30px;
+  align-items:stretch;
+}
+
+.news-card{
+  flex:1;
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  transition:all 0.35s ease;
+}
+
+.news-card:hover{
+  transform:translateY(-8px);
+}
+
+
+.news-image{
+  position:relative;
+  overflow:hidden;
+  border-radius:10px;
+}
+
+.news-image img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  display:block;
+  transition:transform 0.4s ease;
+}
+
+
+
+.news-card:hover .news-image img{
+  transform:scale(1.08);
+}
+
+
+
+.news-date{
+  position:absolute;
+  bottom:15px;
+  left:20px;
+  background:#4caf50;
+  color:white;
+  padding:8px 18px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+
+
+
+.news-info{
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  flex-grow:1;
+}
+
+
+
+
+.news-meta{
+  display:flex;
+  gap:20px;
+  font-size:14px;
+  color:#777;
+  margin-bottom:12px;
+}
+
+.news-meta span{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+
+
+
+.news-info h3{
+  font-size:24px;
+  line-height:1.4;
+  min-height:70px;
+  transition:color 0.3s ease;
+}
+
+.news-card:hover h3{
+  color:#4caf50;
+}
+
+.news-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;  
+}

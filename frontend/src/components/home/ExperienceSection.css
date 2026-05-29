@@ -1,0 +1,129 @@
+.experience{
+  padding:80px 20px;
+  background:#f5f5f5;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+
+.exp-header,
+.exp-cards{
+  width:100%;
+  max-width:1200px;
+}
+
+
+
+.exp-header{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:50px;
+}
+
+.exp-left{
+  width:50%;
+}
+
+.exp-small{
+  color:#e0a500;
+  font-weight:500;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 24px;
+}
+
+.exp-left h2{
+  font-size:48px;
+  font-weight:700;
+  margin-top:10px;
+}
+
+.exp-right{
+  width:40%;
+  color:#777;
+  line-height:1.7;
+}
+
+
+
+.exp-cards{
+  display:flex;
+  gap:30px;
+}
+
+
+
+.exp-card{
+  position:relative;
+  flex:1;
+  border-radius:12px;
+  overflow:hidden;
+
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+
+
+
+.exp-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+
+.exp-card img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  display:block;
+}
+
+
+
+.exp-overlay{
+  position:absolute;
+  inset:0;
+
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0)
+  );
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  padding:30px;
+}
+
+
+
+.exp-overlay h3{
+  color:white;
+  font-size:28px;
+  font-weight:600;
+}
+
+
+.exp-desc{
+  color:#ddd;
+  font-size:14px;
+  line-height:1.5;
+
+  opacity:0;
+  transform:translateY(10px);
+
+  transition:all .35s ease;
+  margin-top:10px;
+}
+
+
+
+.exp-card:hover .exp-desc{
+  opacity:1;
+  transform:translateY(0);
+}
