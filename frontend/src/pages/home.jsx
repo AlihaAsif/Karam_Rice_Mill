@@ -1,5 +1,5 @@
 import Topbar from "../components/layout/Topbar";
-import Navbar from "../components/layout/Navbar";
+import Navbar from "../components/layout/NavBar";
 import Hero from "../components/home/HeroSection";
 import StatsSection from "../components/home/StatsSection";
 import ProductsSection from "../components/home/ProductsSection";
