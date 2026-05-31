@@ -144,3 +144,20 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .trusted {
+    padding: 60px 20px;
+  }
+  .trusted-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .trusted-left h2 {
+    font-size: 32px;
+  }
+  .trusted-badge {
+    left: 20px;
+    top: -20px;
+  }
+}

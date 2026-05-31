@@ -202,3 +202,33 @@
   text-align: center;
   padding: 40px 0;
 }
+
+@media (max-width: 992px) {
+  .store-section {
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .store-sidebar {
+    width: 100%;
+  }
+  .store-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .store-topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  .store-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .store-card-img img {
+    height: 240px;
+  }
+}

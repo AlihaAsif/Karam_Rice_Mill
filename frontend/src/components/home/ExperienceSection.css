@@ -127,3 +127,30 @@
   opacity:1;
   transform:translateY(0);
 }
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 60px 20px;
+  }
+  .exp-header {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .exp-left {
+    width: 100%;
+  }
+  .exp-left h2 {
+    font-size: 32px;
+  }
+  .exp-right {
+    width: 100%;
+  }
+  .exp-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .exp-card img {
+    height: 300px;
+  }
+}

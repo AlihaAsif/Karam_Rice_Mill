@@ -417,3 +417,65 @@
   color: #111;
   margin: 0;
 }
+
+@media (max-width: 992px) {
+  .sella-top {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .sella-image-side {
+    flex: none;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .sella-main-img {
+    height: 350px;
+  }
+  .related-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .related-card {
+    flex: 0 0 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sella-section {
+    padding: 40px 15px;
+  }
+  .sella-title {
+    font-size: 30px;
+  }
+  .sella-delivery {
+    font-size: 20px;
+  }
+  .sella-thumbnails {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sella-thumb {
+    width: 70px;
+    height: 70px;
+  }
+  .sella-tabs {
+    flex-wrap: wrap;
+  }
+  .sella-tab-btn {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .review-inputs-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .related-card {
+    flex: 0 0 100%;
+    max-width: 320px;
+  }
+}

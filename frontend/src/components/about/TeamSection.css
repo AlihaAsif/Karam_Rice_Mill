@@ -152,3 +152,22 @@
   color: #777;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .team-section {
+    padding: 60px 20px;
+  }
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .team-card {
+    width: 100%;
+    max-width: 370px;
+  }
+  .team-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}

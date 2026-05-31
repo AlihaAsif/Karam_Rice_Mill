@@ -130,3 +130,61 @@
 .hero-discover-btn:hover {
   background: #3e8e41;
 }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+  .hero {
+    height: 75vh;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .hero-content {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 65vh;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    margin: 14px 0;
+  }
+
+  .tagline {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .hero-discover-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .arrow {
+    font-size: 20px;
+  }
+
+  .left {
+    left: 12px;
+  }
+
+  .right {
+    right: 12px;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+  }
+}

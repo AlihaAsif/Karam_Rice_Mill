@@ -163,3 +163,53 @@ text-decoration:none;
 .footer-links a:hover{
 color:white;
 }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .cta-text h2 {
+    font-size: 28px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta {
+    padding: 50px 20px;
+  }
+
+  .cta-text h2 {
+    font-size: 24px;
+  }
+
+  .footer {
+    padding: 50px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}

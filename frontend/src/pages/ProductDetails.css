@@ -265,3 +265,45 @@
   border: 2px solid #4caf50;
 }
 
+@media (max-width: 768px) {
+  .product-details-page {
+    padding: 30px 15px;
+  }
+  .product-main-section {
+    gap: 25px;
+  }
+  .product-info-side h1 {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+  .delivery-info {
+    font-size: 18px;
+  }
+  .tabs-header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tab-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    flex: 1;
+    text-align: center;
+  }
+  .tab-content {
+    padding: 25px 0;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .related-products-grid {
+    justify-content: center;
+    gap: 20px;
+  }
+  .related-card {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+

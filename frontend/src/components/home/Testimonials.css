@@ -104,3 +104,17 @@
   align-items:center;
   justify-content:center;
 }
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 60px 20px;
+  }
+  .test-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .test-container h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}

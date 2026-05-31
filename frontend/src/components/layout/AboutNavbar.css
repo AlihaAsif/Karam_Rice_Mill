@@ -188,3 +188,129 @@
 .about-nav-icons svg:hover {
   color: #4caf50;
 }
+
+/* Hamburger icon - hidden on desktop */
+.about-hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  z-index: 200;
+}
+
+/* Overlay backdrop */
+.about-nav-overlay {
+  display: none;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+  .about-topbar {
+    padding: 12px 20px;
+  }
+
+  .about-logo img {
+    height: 55px;
+  }
+
+  .about-top-info {
+    display: none;
+  }
+
+  .about-navlinks {
+    padding: 0 20px;
+    height: 55px;
+  }
+
+  .about-hamburger {
+    display: block;
+  }
+
+  .about-nav-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 149;
+  }
+
+  .about-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding: 80px 30px 30px;
+    gap: 0;
+    z-index: 150;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+    transition: right 0.35s ease;
+    overflow-y: auto;
+  }
+
+  .about-menu.about-menu-open {
+    right: 0;
+  }
+
+  .about-menu li {
+    color: #333;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    height: auto;
+  }
+
+  .about-menu li:last-child {
+    border-bottom: none;
+  }
+
+  /* Dropdown adjustments for mobile */
+  .about-dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 0 0 0 15px;
+    background: transparent;
+  }
+
+  .about-dropdown-menu li {
+    padding: 10px 0;
+    border-bottom: none;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .about-dropdown-menu li:hover {
+    background: transparent;
+    color: #4caf50;
+  }
+
+  .about-nav-icons {
+    gap: 12px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-topbar {
+    padding: 10px 15px;
+  }
+
+  .about-logo img {
+    height: 45px;
+  }
+
+  .about-navlinks {
+    padding: 0 15px;
+    height: 50px;
+  }
+}

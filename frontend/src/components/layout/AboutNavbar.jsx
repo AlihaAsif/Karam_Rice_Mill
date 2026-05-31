@@ -1,16 +1,18 @@
 import "./AboutNavbar.css";
-import { FaFacebookF, FaInstagram, FaYoutube, FaShoppingCart, FaGlobe } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube, FaShoppingCart, FaGlobe, FaBars, FaTimes } from "react-icons/fa";
 import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { useTranslation } from "react-i18next";
 
 export default function AboutNavbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { cartItems } = useContext(CartContext);
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const cartItemCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
@@ -27,7 +29,20 @@ export default function AboutNavbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileMenuOpen]);
 
   return (
     <div className={`about-navbar-wrapper ${scrolled ? "about-navbar-sticky" : ""}`}>
@@ -76,9 +91,16 @@ export default function AboutNavbar() {
         </div>
       </div>
 
-   
       <div className="about-navlinks">
-        <ul className="about-menu">
+        {/* Hamburger Toggle */}
+        <div className="about-hamburger" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+
+        {/* Overlay */}
+        {mobileMenuOpen && <div className="about-nav-overlay" onClick={() => setMobileMenuOpen(false)} />}
+
+        <ul className={`about-menu ${mobileMenuOpen ? "about-menu-open" : ""}`}>
           <li><Link to="/">{t('nav.home')}</Link></li>
           <li className="about-dropdown">
             <Link to="/about">{t('nav.about')}</Link>
@@ -90,9 +112,9 @@ export default function AboutNavbar() {
           </li>
           <li><Link to="/store">{t('nav.online_store')}</Link></li>
           <li><Link to="/our-process">{t('nav.our_process')}</Link></li>
-         <li><Link to="/e-catalog">{t('nav.e_catalog')}</Link></li>
-         <li><Link to="/news">{t('nav.news')}</Link></li>
-         <li><Link to="/contact">{t('nav.contact')}</Link></li>
+          <li><Link to="/e-catalog">{t('nav.e_catalog')}</Link></li>
+          <li><Link to="/news">{t('nav.news')}</Link></li>
+          <li><Link to="/contact">{t('nav.contact')}</Link></li>
         </ul>
 
         <div className="about-nav-icons" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>

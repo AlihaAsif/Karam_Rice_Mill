@@ -136,3 +136,23 @@
   color: #555;
   margin: 6px 0 0 0;
 }
+
+@media (max-width: 992px) {
+  .director-section {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+  .director-image-side {
+    flex: none;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .director-title {
+    font-size: 32px;
+  }
+  .director-exp-box {
+    left: 20px;
+  }
+}

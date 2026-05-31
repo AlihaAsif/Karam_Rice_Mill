@@ -123,3 +123,17 @@
   color: inherit;
   display: block;  
 }
+
+@media (max-width: 768px) {
+  .news {
+    padding: 60px 20px;
+  }
+  .news-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .news-container h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}

@@ -117,3 +117,28 @@
 .about-contact-btn:hover {
   background: #388e3c;
 }
+
+@media (max-width: 992px) {
+  .about-hero {
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+  .about-hero-left {
+    min-height: auto;
+    width: 100%;
+  }
+  .mill-img {
+    height: 400px;
+  }
+  .bag-img {
+    position: static;
+    width: 100%;
+    max-width: 250px;
+    margin: 20px auto 0;
+    display: block;
+  }
+  .about-title {
+    font-size: 32px;
+  }
+}

@@ -22,3 +22,22 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+@media (max-width: 992px) {
+  .topbar {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+  .top-left {
+    gap: 10px;
+  }
+  .email {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+}
