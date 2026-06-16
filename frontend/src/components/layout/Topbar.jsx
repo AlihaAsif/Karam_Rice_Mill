@@ -12,9 +12,9 @@ export default function Topbar() {
       </div>
 
       <div className="top-right">
-        <FaFacebookF />
-        <FaInstagram />
-        <FaYoutube />
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
       </div>
     </div>
   );

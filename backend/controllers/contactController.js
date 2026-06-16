@@ -3,10 +3,12 @@ import Message from '../models/Message.js';
 // Submit a new contact message
 export const submitMessage = async (req, res) => {
   try {
-    const { name, email, subject, message } = req.body;
+    const { name, email, telephone, city, subject, message } = req.body;
     const newMessage = new Message({
       name,
       email,
+      telephone,
+      city,
       subject,
       message
     });

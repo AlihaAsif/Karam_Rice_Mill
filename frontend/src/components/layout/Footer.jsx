@@ -18,17 +18,16 @@ export default function Footer() {
       <section className="cta">
         <div className="cta-container">
           <div className="cta-text">
-            <span className="cta-label">Rice Market Leaders</span>
+            <span className="cta-label">{t('footer.cta_tagline')}</span>
 
             <h2>
-              Trusted rice exporters delivering purity, aroma, and excellence
-              from Pakistan to the world.
+              {t('footer.cta_title')}
             </h2>
 
-            <p>Pakistan Best Rice Exporter</p>
+            <p>{t('footer.cta_subtitle')}</p>
           </div>
 
-          <Link to="/about" className="cta-btn">Discover More</Link>
+          <Link to="/about" className="cta-btn">{t('home.explore_products')}</Link>
         </div>
       </section>
 
@@ -44,10 +43,10 @@ export default function Footer() {
             </p>
 
             <div className="socials">
-              <FaLinkedin />
-              <FaInstagram />
-              <FaFacebook />
-              <FaTiktok />
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
             </div>
           </div>
 
@@ -59,7 +58,7 @@ export default function Footer() {
               <li><Link to="/about">{t('nav.about')}</Link></li>
               <li><Link to="/store">{t('nav.online_store')}</Link></li>
               <li><Link to="/our-process">{t('nav.our_process')}</Link></li>
-              <li><Link to="/about">{t('nav.managing_director')}</Link></li>
+              <li><Link to="/managing-director">{t('nav.managing_director')}</Link></li>
               <li><Link to="/news">{t('nav.news')}</Link></li>
               <li><Link to="/contact">{t('nav.contact')}</Link></li>
             </ul>
@@ -67,13 +66,13 @@ export default function Footer() {
 
          
           <div className="footer-col">
-            <h4>News</h4>
+            <h4>{t('footer.news')}</h4>
 
             <div className="footer-news">
               <Link to="/news/news-1" className="news-item">
                 <img src="/blog1.jpg" />
                 <div>
-                  <p>The Journey of Rice – From Farm to Global Markets</p>
+                  <p>{t('news_articles.news1.title')}</p>
                   <span>December 23, 2025</span>
                 </div>
               </Link>
@@ -81,7 +80,7 @@ export default function Footer() {
               <Link to="/news/news-2" className="news-item">
                 <img src="/blog2.jpg" />
                 <div>
-                  <p>Why Advanced Rice Milling Technology</p>
+                  <p>{t('news_articles.news2.title')}</p>
                   <span>December 23, 2025</span>
                 </div>
               </Link>
@@ -110,13 +109,13 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>
-            © All Copyright 2025 Reserved Developed by
+            {t('footer.developed_by')}
             <span className="developer"> Webms.pk</span>
           </p>
 
           <div className="footer-links">
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
+            <a href="#">{t('footer.terms_of_use')}</a>
+            <a href="#">{t('footer.privacy_policy')}</a>
           </div>
         </div>
       </footer>

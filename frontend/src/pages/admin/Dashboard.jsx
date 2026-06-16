@@ -221,6 +221,8 @@ function Dashboard() {
                 <button className="action-btn" onClick={() => setViewItem(null)} style={{ marginBottom: '15px' }}>← Back</button>
                 <h3 style={{ marginBottom: '10px' }}>Message from {viewItem.name}</h3>
                 <p><strong>Email:</strong> {viewItem.email}</p>
+                <p><strong>Telephone:</strong> {viewItem.telephone || '—'}</p>
+                <p><strong>City:</strong> {viewItem.city || '—'}</p>
                 <p><strong>Subject:</strong> {viewItem.subject}</p>
                 <p style={{ marginTop: '15px', whiteSpace: 'pre-wrap', background: '#fff', padding: '15px', borderRadius: '8px', border: '1px solid #eee' }}>
                   {viewItem.message}
@@ -234,14 +236,15 @@ function Dashboard() {
             ) : (
               <table className="admin-table">
                 <thead>
-                  <tr><th>Name</th><th>Email</th><th>Subject</th><th>Status</th><th>Date</th><th>Actions</th></tr>
+                  <tr><th>Name</th><th>Email</th><th>City</th><th>Subject</th><th>Status</th><th>Date</th><th>Actions</th></tr>
                 </thead>
                 <tbody>
-                  {data.length === 0 && <tr><td colSpan="6" style={{ textAlign: 'center', color: '#888' }}>No messages yet.</td></tr>}
+                  {data.length === 0 && <tr><td colSpan="7" style={{ textAlign: 'center', color: '#888' }}>No messages yet.</td></tr>}
                   {data.map((item) => (
                     <tr key={item._id}>
                       <td>{item.name}</td>
                       <td>{item.email}</td>
+                      <td>{item.city || '—'}</td>
                       <td>{item.subject || '—'}</td>
                       <td>
                         <span style={{ ...statusColor(item.status), padding: '3px 10px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: '600' }}>

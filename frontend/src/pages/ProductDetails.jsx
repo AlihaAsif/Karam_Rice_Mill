@@ -15,6 +15,7 @@ function ProductDetails() {
   const [error, setError] = useState(null);
   const [mainImage, setMainImage] = useState("");
   const [showToast, setShowToast] = useState(false);
+  const [quantity, setQuantity] = useState(1);
   const { addToCart } = useContext(CartContext);
   const { t } = useTranslation();
 
@@ -88,10 +89,31 @@ function ProductDetails() {
             <h1>{product.name}</h1>
             <p className="short-desc" dangerouslySetInnerHTML={{ __html: t('product_details.short_desc') }}></p>
             <h2 className="delivery-info">{t('product_details.free_delivery')}</h2>
+            <div className="quantity-selector" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
+              <label style={{ fontWeight: 'bold' }}>{t('product_details.quantity')}:</label>
+              <div style={{ display: 'flex', alignItems: 'center', border: '1px solid #ccc', borderRadius: '4px', overflow: 'hidden' }}>
+                <button 
+                  onClick={() => setQuantity(prev => Math.max(1, prev - 1))}
+                  style={{ width: '35px', height: '35px', border: 'none', background: '#f5f5f5', cursor: 'pointer', fontSize: '1.2rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  -
+                </button>
+                <input 
+                  type="number" 
+                  value={quantity} 
+                  onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
+                  style={{ width: '50px', height: '35px', textAlign: 'center', border: 'none', borderLeft: '1px solid #ccc', borderRight: '1px solid #ccc', fontSize: '1rem' }} />
+                <button 
+                  onClick={() => setQuantity(prev => prev + 1)}
+                  style={{ width: '35px', height: '35px', border: 'none', background: '#f5f5f5', cursor: 'pointer', fontSize: '1.2rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  +
+                </button>
+              </div>
+            </div>
+
             <div style={{ display: 'flex', gap: '15px', alignItems: 'center', marginBottom: '20px' }}>
               <button 
                 onClick={() => {
-                  addToCart(product);
+                  addToCart(product, quantity);
                   setShowToast(true);
                   setTimeout(() => setShowToast(false), 3000);
                 }} 

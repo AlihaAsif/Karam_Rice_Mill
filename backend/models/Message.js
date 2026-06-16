@@ -9,6 +9,14 @@ const messageSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  telephone: {
+    type: String,
+    required: false,
+  },
+  city: {
+    type: String,
+    required: false,
+  },
   subject: {
     type: String,
     required: false,

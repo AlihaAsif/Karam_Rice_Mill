@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 function Contact() {
   const [formData, setFormData] = useState({
     firstName: "", lastName: "", email: "",
-    subject: "", telephone: "", website: "", message: ""
+    subject: "", telephone: "", city: "", message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { t } = useTranslation();
@@ -25,8 +25,10 @@ function Contact() {
       const dataToSend = {
         name: `${formData.firstName} ${formData.lastName}`,
         email: formData.email,
+        telephone: formData.telephone,
+        city: formData.city,
         subject: formData.subject,
-        message: `Telephone: ${formData.telephone}\nWebsite: ${formData.website}\n\n${formData.message}`
+        message: formData.message
       };
       
       const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
@@ -35,7 +37,7 @@ function Contact() {
         alert(t('contact_page.success_msg'));
         setFormData({
           firstName: "", lastName: "", email: "",
-          subject: "", telephone: "", website: "", message: ""
+          subject: "", telephone: "", city: "", message: ""
         });
       }
     } catch (error) {
@@ -170,13 +172,14 @@ function Contact() {
                   />
                 </div>
                 <div className="form-group">
-                  <label>{t('contact_page.website')} <span className="required">*</span></label>
+                  <label>{t('contact_page.city')} <span className="required">*</span></label>
                   <input
-                    type="url"
-                    name="website"
-                    placeholder="https://example.com"
-                    value={formData.website}
+                    type="text"
+                    name="city"
+                    placeholder={t('contact_page.city_ph')}
+                    value={formData.city}
                     onChange={handleChange}
+                    required
                   />
                 </div>
               </div>

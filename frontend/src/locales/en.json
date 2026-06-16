@@ -19,7 +19,14 @@
     "basmati": "Basmati Rice",
     "sella": "Sella Rice",
     "steam": "Steam Rice",
-    "all_rights": "All rights reserved"
+    "all_rights": "All rights reserved",
+    "news": "News",
+    "cta_tagline": "Rice Market Leaders",
+    "cta_title": "Trusted rice exporters delivering purity, aroma, and excellence from Pakistan to the world.",
+    "cta_subtitle": "Pakistan Best Rice Exporter",
+    "terms_of_use": "Terms of Use",
+    "privacy_policy": "Privacy Policy",
+    "developed_by": "© All Copyright 2025 Reserved Developed by"
   },
   "home": {
     "hero_subtitle": "PREMIUM QUALITY FROM PAKISTAN",
@@ -192,7 +199,8 @@
     "subject": "Subject",
     "subject_ph": "How can we help you?",
     "telephone": "Telephone",
-    "website": "Website",
+    "city": "City",
+    "city_ph": "Enter your city here",
     "how_can_we_help": "How can we help?",
     "feel_free": "Feel free to ask a question or simply leave a comment",
     "comments_label": "Comments / Questions",
@@ -228,6 +236,7 @@
     "back_to_store": "Back to Store",
     "short_desc": "At <strong>Karam Rice Mills</strong>, we specialize in producing and supplying <strong>high-quality rice</strong> processed under strict quality control standards. Our rice is carefully sourced from trusted farms, hygienically milled, and expertly packaged to preserve its <strong>natural aroma, texture, and nutritional value</strong>.",
     "free_delivery": "Free home delivery in Okara",
+    "quantity": "Quantity",
     "add_to_cart": "Add to Cart",
     "added_to_cart": "Added to cart!",
     "category": "Category",

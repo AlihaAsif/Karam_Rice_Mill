@@ -54,9 +54,9 @@ export default function AboutNavbar() {
 
         <div className="about-top-info">
           <div className="about-socials">
-            <FaFacebookF />
-            <FaInstagram />
-            <FaYoutube />
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
           </div>
 
           <div className="about-divider" />
