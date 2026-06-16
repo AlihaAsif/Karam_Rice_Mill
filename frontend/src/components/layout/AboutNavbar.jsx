@@ -45,7 +45,7 @@ export default function AboutNavbar() {
   }, [mobileMenuOpen]);
 
   return (
-    <div className={`about-navbar-wrapper ${scrolled ? "about-navbar-sticky" : ""}`}>
+    <div className={`about-navbar-wrapper ${scrolled ? "about-navbar-sticky" : ""} ${mobileMenuOpen ? "about-navbar-mobile-open" : ""}`}>
       {/* Top Row */}
       <div className="about-topbar">
         <div className="about-logo">

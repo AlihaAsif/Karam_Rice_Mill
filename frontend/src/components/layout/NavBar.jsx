@@ -44,7 +44,7 @@ export default function Navbar() {
   }, [mobileMenuOpen]);
 
   return (
-    <div className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
+    <div className={`navbar ${scrolled ? "navbar-scrolled" : ""} ${mobileMenuOpen ? "navbar-mobile-open" : ""}`}>
       <div className="logo">
         <img src="/logo.png" alt="KRM Logo" />
       </div>
