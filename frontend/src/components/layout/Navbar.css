@@ -184,7 +184,7 @@
   }
 
   .navbar-mobile-open .hamburger {
-    color: #fff !important;
+    color: #333 !important;
     transform: rotate(90deg);
   }
 
@@ -211,12 +211,12 @@
     right: -300px;
     width: 290px;
     height: 100vh;
-    background: linear-gradient(145deg, #111a13 0%, #070a08 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #fcfcfc 100%);
     flex-direction: column;
     padding: 90px 24px 30px;
     gap: 0;
     z-index: 150;
-    box-shadow: -8px 0 25px rgba(0, 0, 0, 0.4);
+    box-shadow: -8px 0 25px rgba(0, 0, 0, 0.08);
     border-left: 2px solid #4caf50;
     transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     overflow-y: auto;
@@ -227,9 +227,9 @@
   }
 
   .menu li {
-    color: #f5f5f5;
+    color: #333;
     padding: 16px 12px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid #f0f0f0;
     font-size: 15px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -238,7 +238,7 @@
   .menu li:hover {
     color: #4caf50;
     padding-left: 18px;
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(0, 0, 0, 0.02);
   }
 
   .menu li:last-child {
@@ -261,7 +261,7 @@
     padding: 10px 0 10px 15px;
     border-bottom: none;
     font-size: 14px;
-    color: #b0b3b8;
+    color: #555;
     border-left: 2px solid #e0a500;
     margin-top: 6px;
     transition: all 0.3s ease;
