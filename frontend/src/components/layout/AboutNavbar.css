@@ -253,6 +253,7 @@
     height: 100vh;
     background: white;
     flex-direction: column;
+    align-items: stretch;
     padding: 80px 30px 30px;
     gap: 0;
     z-index: 150;
@@ -266,6 +267,7 @@
   }
 
   .about-menu li {
+    display: block;
     color: #333;
     padding: 14px 0;
     border-bottom: 1px solid #f0f0f0;
