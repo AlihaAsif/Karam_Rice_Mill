@@ -23,6 +23,17 @@
   cursor: pointer;
 }
 
+.top-right a {
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+}
+
+.top-right a:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 992px) {
   .topbar {
     padding: 8px 20px;

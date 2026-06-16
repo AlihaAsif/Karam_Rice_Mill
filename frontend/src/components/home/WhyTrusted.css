@@ -160,4 +160,25 @@
     left: 20px;
     top: -20px;
   }
+}
+
+@media (max-width: 480px) {
+  .trusted {
+    padding: 50px 16px;
+  }
+  .trusted-left h2 {
+    font-size: 26px;
+  }
+  .trusted-small {
+    font-size: 20px;
+  }
+  .trusted-badge {
+    position: static;
+    margin-bottom: 15px;
+    animation: none;
+    display: inline-flex;
+  }
+  .trusted-right {
+    overflow: visible;
+  }
 }

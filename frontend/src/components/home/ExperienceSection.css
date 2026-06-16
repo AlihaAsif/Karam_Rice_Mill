@@ -153,4 +153,22 @@
   .exp-card img {
     height: 300px;
   }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 50px 16px;
+  }
+  .exp-left h2 {
+    font-size: 26px;
+  }
+  .exp-small {
+    font-size: 20px;
+  }
+  .exp-card img {
+    height: 240px;
+  }
+  .exp-overlay h3 {
+    font-size: 22px;
+  }
 }

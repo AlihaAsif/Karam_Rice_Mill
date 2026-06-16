@@ -117,4 +117,23 @@
     font-size: 30px;
     margin-bottom: 30px;
   }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 50px 16px;
+  }
+  .test-small {
+    font-size: 20px;
+  }
+  .test-container h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .test-card {
+    padding: 22px;
+  }
+  .test-card p {
+    font-size: 14px;
+  }
 }

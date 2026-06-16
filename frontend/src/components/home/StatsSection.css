@@ -67,4 +67,19 @@
   .stat-card {
     padding: 30px 20px;
   }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    padding: 50px 16px;
+  }
+  .stat-card h2 {
+    font-size: 38px;
+  }
+  .stat-card p {
+    font-size: 14px;
+  }
+  .icon {
+    font-size: 32px;
+  }
 }

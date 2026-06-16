@@ -180,4 +180,35 @@
     display: block;
     padding: 20px;
   }
+}
+
+@media (max-width: 480px) {
+  .who {
+    padding: 50px 16px;
+  }
+  .who-left h2 {
+    font-size: 28px;
+  }
+  .who-left > p {
+    font-size: 14px;
+  }
+  .feature {
+    font-size: 14px;
+    padding: 12px 16px;
+    gap: 10px;
+  }
+  .feature-icon {
+    font-size: 22px;
+  }
+  .contact-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .contact-box h4 {
+    font-size: 17px;
+  }
+  .experience-box h3 {
+    font-size: 40px;
+  }
 }

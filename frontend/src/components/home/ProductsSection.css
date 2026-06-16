@@ -97,10 +97,24 @@
     padding: 60px 20px;
     gap: 30px;
   }
+  .product-card {
+    width: calc(50% - 15px);
+    min-width: 260px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+  .products-section {
+    flex-direction: column;
+    padding: 50px 16px;
+    gap: 20px;
+    align-items: stretch;
+  }
   .product-card {
     width: 100%;
+    padding: 20px;
+  }
+  .product-card h3 {
+    font-size: 18px;
   }
 }

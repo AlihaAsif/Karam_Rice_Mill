@@ -141,4 +141,35 @@
   .about-title {
     font-size: 32px;
   }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 40px 16px;
+    gap: 28px;
+  }
+  .mill-img {
+    height: 260px;
+  }
+  .bag-img {
+    max-width: 180px;
+  }
+  .about-tagline {
+    font-size: 20px;
+  }
+  .about-title {
+    font-size: 26px;
+  }
+  .about-highlight {
+    font-size: 14px;
+  }
+  .about-desc {
+    font-size: 14px;
+  }
+  .about-contact-btn {
+    padding: 13px 28px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
 }

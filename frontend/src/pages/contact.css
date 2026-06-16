@@ -237,6 +237,16 @@
     padding: 30px 16px;
   }
 
+  .contact-form-wrapper {
+    min-height: auto;
+    padding: 24px 16px;
+  }
+
+  .contact-map,
+  .contact-map iframe {
+    min-height: 280px;
+  }
+
   .card-title {
     font-size: 26px;
   }

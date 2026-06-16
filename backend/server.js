@@ -13,14 +13,12 @@ app.use(express.json());
 
 // Routes
 import productRoutes from './routes/productRoutes.js';
-import newsRoutes from './routes/newsRoutes.js';
 import contactRoutes from './routes/contactRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
 import reviewRoutes from './routes/reviewRoutes.js';
 import commentRoutes from './routes/commentRoutes.js';
 
 app.use('/api/products', productRoutes);
-app.use('/api/news', newsRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/reviews', reviewRoutes);
