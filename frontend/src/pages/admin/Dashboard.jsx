@@ -8,6 +8,7 @@ const API_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api"
 function Dashboard() {
   const [activeTab, setActiveTab] = useState("products");
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [showProductModal, setShowProductModal] = useState(false);
   const [viewItem, setViewItem] = useState(null); // For viewing message detail
   const [productForm, setProductForm] = useState({ name: '', description: '', category: '', image: '' });
@@ -53,7 +54,14 @@ function Dashboard() {
     navigate("/admin/login");
   };
 
+  const handleTabChange = (tab) => {
+    setViewItem(null);
+    setData([]);
+    setActiveTab(tab);
+  };
+
   const fetchData = async (tab) => {
+    setLoading(true);
     try {
       const { data: responseData } = await axios.get(`${API_URL}${getEndpoint(tab)}`, getHeaders());
       setData(responseData);
@@ -62,6 +70,8 @@ function Dashboard() {
       if (error.response?.status === 401 || error.response?.status === 403) {
         handleLogout();
       }
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -130,17 +140,17 @@ function Dashboard() {
       <div className="admin-sidebar">
         <h3>⚙️ Admin Panel</h3>
         <ul>
-          <li className={activeTab === "products" ? "active" : ""} onClick={() => setActiveTab("products")}>
+          <li className={activeTab === "products" ? "active" : ""} onClick={() => handleTabChange("products")}>
             📦 Products
           </li>
 
-          <li className={activeTab === "messages" ? "active" : ""} onClick={() => setActiveTab("messages")}>
+          <li className={activeTab === "messages" ? "active" : ""} onClick={() => handleTabChange("messages")}>
             📩 Contact Messages
           </li>
-          <li className={activeTab === "reviews" ? "active" : ""} onClick={() => setActiveTab("reviews")}>
+          <li className={activeTab === "reviews" ? "active" : ""} onClick={() => handleTabChange("reviews")}>
             ⭐ Product Reviews
           </li>
-          <li className={activeTab === "comments" ? "active" : ""} onClick={() => setActiveTab("comments")}>
+          <li className={activeTab === "comments" ? "active" : ""} onClick={() => handleTabChange("comments")}>
             💬 News Comments
           </li>
         </ul>
@@ -159,8 +169,15 @@ function Dashboard() {
           <button className="logout-btn" onClick={handleLogout}>Logout</button>
         </div>
 
-        {/* ===== PRODUCTS TAB ===== */}
-        {activeTab === "products" && (
+        {loading ? (
+          <div className="admin-loader-container">
+            <div className="admin-spinner"></div>
+            <p style={{ marginTop: '10px', color: '#64748b', fontWeight: '500' }}>Fetching details...</p>
+          </div>
+        ) : (
+          <>
+            {/* ===== PRODUCTS TAB ===== */}
+            {activeTab === "products" && (
           <div>
             <button className="admin-btn add-new-btn" onClick={() => setShowProductModal(true)}>
               + Add New Product
@@ -351,7 +368,9 @@ function Dashboard() {
             </table>
           </div>
         )}
-      </div>
+      </>
+    )}
+  </div>
 
       {/* ===== ADD PRODUCT MODAL ===== */}
       {showProductModal && (

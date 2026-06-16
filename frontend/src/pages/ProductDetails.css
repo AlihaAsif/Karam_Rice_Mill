@@ -16,7 +16,7 @@
 @media (min-width: 768px) {
   .product-main-section {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -160,13 +160,22 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .related-card {
   width: 250px;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
 }
 
 .related-card img {
@@ -177,8 +186,10 @@
 }
 
 .related-card h3 {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px 0 0 0;
 }
 
 /* Reviews Tab Styles */
