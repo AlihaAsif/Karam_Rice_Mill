@@ -9,7 +9,7 @@ import "./news1.css";
 
 const NEWS_SLUG = "news-3";
 const NEWS_TITLE = "Sustainable Practices in the Rice Milling";
-const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://karam-rice-mill-m15q.vercel.app/api';
 
 function News3() {
   const [comments, setComments] = useState([]);

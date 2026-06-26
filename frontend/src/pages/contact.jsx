@@ -31,7 +31,7 @@ function Contact() {
         message: formData.message
       };
       
-      const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+      const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://karam-rice-mill-m15q.vercel.app/api';
       const response = await axios.post(`${API_URL}/contact`, dataToSend);
       if (response.data.success) {
         alert(t('contact_page.success_msg'));

@@ -23,7 +23,7 @@ function ProductDetails() {
     const fetchProductAndRelated = async () => {
       try {
         setLoading(true);
-        const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+        const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://karam-rice-mill-m15q.vercel.app/api';
         const { data: currentProduct } = await axios.get(`${API_URL}/products/${id}`);
         setProduct(currentProduct);
         setMainImage(currentProduct.image || "/product-placeholder.png");
@@ -164,7 +164,7 @@ function ReviewsTab({ product, productId }) {
   const [submitMsg, setSubmitMsg] = useState('');
   const { t } = useTranslation();
 
-  const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+  const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://karam-rice-mill-m15q.vercel.app/api';
 
   useEffect(() => {
     if (activeTab === 'reviews') fetchReviews();

@@ -25,7 +25,7 @@ export default function StoreSection() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+        const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://karam-rice-mill-m15q.vercel.app/api';
         const { data } = await axios.get(`${API_URL}/products`);
         setProducts(data);
         setLoading(false);

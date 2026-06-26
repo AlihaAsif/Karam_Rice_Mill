@@ -19,7 +19,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const API_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+      const API_URL = import.meta.env.VITE_API_BASE_URL || "https://karam-rice-mill-m15q.vercel.app/api";
       const { data } = await axios.post(`${API_URL}/admin/login`, { username, password });
       
       localStorage.setItem("adminInfo", JSON.stringify(data));

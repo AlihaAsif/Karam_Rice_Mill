@@ -9,7 +9,7 @@ import "./news1.css";
 
 const NEWS_SLUG = "news-2";
 const NEWS_TITLE = "Why Advanced Rice Milling Technology";
-const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://karam-rice-mill-m15q.vercel.app/api';
 
 function News2() {
   const [comments, setComments] = useState([]);
